@@ -12,10 +12,18 @@ import {
   Form,
   Input,
   Row,
-  Col
+  Col,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
 } from "reactstrap";
 
+
+
 class UserProfile extends React.Component {
+
+
   render() {
     return (
       <>
@@ -24,7 +32,7 @@ class UserProfile extends React.Component {
             <Col md="8">
               <Card>
                 <CardHeader>
-                  <h5 className="title">Edit Profile</h5>
+                  <h5 className="title">Kasa Girişi</h5>
                 </CardHeader>
                 <CardBody>
                   <Form>
@@ -136,6 +144,68 @@ class UserProfile extends React.Component {
                         </FormGroup>
                       </Col>
                     </Row>
+                    <Row>
+                      <Col md="3">
+                        <FormGroup>
+                          <label>Hareket Tipi</label>
+                          <UncontrolledDropdown className="kotucocuk">
+                                <DropdownToggle caret>
+                                  Hareket Tipi
+                                </DropdownToggle>
+                                <DropdownMenu>
+                                  <DropdownItem >Giriş</DropdownItem>
+                                  <DropdownItem >Çıkış</DropdownItem>
+                                  <DropdownItem >Virman</DropdownItem>
+                                </DropdownMenu>
+                              </UncontrolledDropdown>
+                        </FormGroup>
+                      </Col>
+                      <Col md="3">
+                        <FormGroup>
+                          <label>Hareket Kalemi</label>
+                          <UncontrolledDropdown className="kotucocuk">
+                                <DropdownToggle caret>
+                                  Hareket Kalemi
+                                </DropdownToggle>
+                                <DropdownMenu>
+                                  <DropdownItem >Giriş</DropdownItem>
+                                  <DropdownItem >Çıkış</DropdownItem>
+                                  <DropdownItem >Virman</DropdownItem>
+                                </DropdownMenu>
+                              </UncontrolledDropdown>
+                        </FormGroup>
+                      </Col>
+                      <Col md="3">
+                        <FormGroup>
+                          <label>Kaynak</label>
+                          <UncontrolledDropdown className="kotucocuk">
+                                <DropdownToggle caret>
+                                  Kaynak
+                                </DropdownToggle>
+                                <DropdownMenu>
+                                  <DropdownItem >Giriş</DropdownItem>
+                                  <DropdownItem >Çıkış</DropdownItem>
+                                  <DropdownItem >Virman</DropdownItem>
+                                </DropdownMenu>
+                              </UncontrolledDropdown>
+                        </FormGroup>
+                      </Col>
+                      <Col md="3">
+                        <FormGroup>
+                          <label>Hareket Türü</label>
+                          <UncontrolledDropdown className="kotucocuk">
+                                <DropdownToggle caret>
+                                  Hareket Türü
+                                </DropdownToggle>
+                                <DropdownMenu>
+                                  <DropdownItem >Giriş</DropdownItem>
+                                  <DropdownItem >Çıkış</DropdownItem>
+                                  <DropdownItem >Virman</DropdownItem>
+                                </DropdownMenu>
+                              </UncontrolledDropdown>
+                        </FormGroup>
+                      </Col>
+                    </Row>
                   </Form>
                 </CardBody>
                 <CardFooter>
@@ -158,11 +228,11 @@ class UserProfile extends React.Component {
                       <img
                         alt="..."
                         className="avatar"
-                        src={require("assets/img/emilyz.jpg")}
+                        src={require("assets/img/sevgi.jpeg")}
                       />
-                      <h5 className="title">Mike Andrew</h5>
+                      <h5 className="title">Sevgi Önal</h5>
                     </a>
-                    <p className="description">Ceo/Co-Founder</p>
+                    <p className="description">İdari İşler ve Ön Muhasebe Uzmanı</p>
                   </div>
                   <div className="card-description">
                     Do not be scared of the truth because we need to restart the
